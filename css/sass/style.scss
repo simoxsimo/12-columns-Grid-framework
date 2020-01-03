@@ -7,75 +7,114 @@
 @mixin newRow {
 	clear: left;
 }
-$gutter:0;
 
-.col-1{
+@mixin responsive($gutter) {
+	.col-1{
 	@include gridFramework(1,$gutter);
+	}
+	.col-2{
+		@include gridFramework(2,$gutter);
+	}
+	.col-3{
+		@include gridFramework(3,$gutter);
+	}
+	.col-4{
+		@include gridFramework(4,$gutter);
+	}
+	.col-5{
+		@include gridFramework(5,$gutter);
+	}
+	.col-6{
+		@include gridFramework(6,$gutter);
+	}
+	.col-7{
+		@include gridFramework(7,$gutter);
+	}
+	.col-8{
+		@include gridFramework(8,$gutter);
+	}
+	.col-9{
+		@include gridFramework(9,$gutter);
+	}
+	.col-10{
+		@include gridFramework(10,$gutter);
+	}
+	.col-11{
+		@include gridFramework(11,$gutter);
+	}
+	.col-12{
+		@include gridFramework(12,$gutter);
+	}
 }
-.col-2{
-	@include gridFramework(2,$gutter);
-}
-.col-3{
-	@include gridFramework(3,$gutter);
-}
-.col-4{
-	@include gridFramework(4,$gutter);
-}
-.col-5{
-	@include gridFramework(5,$gutter);
-}
-.col-6{
-	@include gridFramework(6,$gutter);
-}
-.col-7{
-	@include gridFramework(7,$gutter);
-}
-.col-8{
-	@include gridFramework(8,$gutter);
-}
-.col-9{
-	@include gridFramework(9,$gutter);
-}
-.col-10{
-	@include gridFramework(10,$gutter);
-}
-.col-11{
-	@include gridFramework(11,$gutter);
-}
-.col-12{
-	@include gridFramework(12,$gutter);
-}
+
 .new-row{
 	@include newRow;
 }
 .golden{
 	color: #cc9543;
 }
-
+.dark {
+	color: rgba(74,74,74,0.7);;
+}
 
 
 body {
+	@include responsive(20px);
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	header {
 		nav {
+			height: 70px;
+			margin: 0 168px;
 			div {
+				height: inherit;
 				a {
 					text-decoration: none;
+					height: inherit;
+					img {
+						width: 53px;
+						height: inherit;
+					}
 					span {
 						font-family: 'Skranji', cursive;
 						letter-spacing: 0.4px;
-    					font-size: 2em;
+    					font-size: 1.3em;
+    					height: inherit;
+   						line-height: 70px;
+   						text-align: left;
+   						padding-left: 10px;
 					}
 				}
 			}
 			ul {
 				list-style: none;
+				height: inherit;
+				margin: 0;
+				padding-left:200px;	
 				li {
+					height: inherit;
+					letter-spacing: 0.2px;
+				    font-size: 1em;
+				    font-weight: bold;
+				    line-height: 70px;
+				    float: left;
+				    padding-right: 18px;
+
+				   	a {
+				   		text-decoration: none;
+						height: inherit;
+				   	}
+				   	a:hover {
+						color: #343a40;
+					}
 				}
+				
 			}
 		}
 	}
 	@media (max-width: 1199px) {
+		@include responsive(10px);
 	}
 	@media (max-width: 767px) {
+		@include responsive(5px);
 	}
 }
