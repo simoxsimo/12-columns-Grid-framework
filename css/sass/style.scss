@@ -1,42 +1,75 @@
-@mixin gridFramework($numberColumns) {
+@mixin gridFramework($span,$gutter) {
 	float: left;
-	margin: 0 $gridMargin;
-	width: calc(($numberColumns * #{$columnWidth}) + ($gridGutter * ($numberColumns - 1)));
+	box-sizing: border-box;
+	padding-right: $gutter;
+	width: 100% / 12 * $span;
 }
-
 @mixin newRow {
 	clear: left;
 }
+$gutter:0;
 
-$odinGold: #cc9543;
+.col-1{
+	@include gridFramework(1,$gutter);
+}
+.col-2{
+	@include gridFramework(2,$gutter);
+}
+.col-3{
+	@include gridFramework(3,$gutter);
+}
+.col-4{
+	@include gridFramework(4,$gutter);
+}
+.col-5{
+	@include gridFramework(5,$gutter);
+}
+.col-6{
+	@include gridFramework(6,$gutter);
+}
+.col-7{
+	@include gridFramework(7,$gutter);
+}
+.col-8{
+	@include gridFramework(8,$gutter);
+}
+.col-9{
+	@include gridFramework(9,$gutter);
+}
+.col-10{
+	@include gridFramework(10,$gutter);
+}
+.col-11{
+	@include gridFramework(11,$gutter);
+}
+.col-12{
+	@include gridFramework(12,$gutter);
+}
+.new-row{
+	@include newRow;
+}
+.golden{
+	color: #cc9543;
+}
+
+
 
 body {
-	$gridMargin: 40px;
-	$gridGutter: 20px;
-	width: 100%;
 	header {
 		nav {
-			$columnWidth: 6.6666%;
-			@include gridFramework(12);
 			div {
-				$columnWidth: 6.6666%;
-				@include gridFramework(10, 0, 20px);
 				a {
-					@include gridFramework(6, 0, 20px);
 					text-decoration: none;
 					span {
 						font-family: 'Skranji', cursive;
-						color: $odinGold;
 						letter-spacing: 0.4px;
     					font-size: 2em;
 					}
 				}
 			}
 			ul {
-				@include gridFramework(6, 0, 20px);
 				list-style: none;
 				li {
-					@include gridFramework(2, 0, 20px);
 				}
 			}
 		}
