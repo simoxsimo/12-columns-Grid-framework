@@ -10,6 +10,10 @@
   color: rgba(74, 74, 74, 0.7);
 }
 
+.text-center {
+  text-align: center;
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -142,9 +146,11 @@ body .main-content .main-text {
   text-align: center;
 }
 body .main-content .btn-container {
-  padding-top: 50px;
+  padding: 50px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
 }
-body .main-content button {
+body .main-content .btn-container button {
   border-radius: 0.2em;
   box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -159,7 +165,42 @@ body .main-content button {
   border: none;
   background-color: #6abfc3;
   width: 280px;
-  margin: 0 94px;
+}
+body .how-it-works {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .how-it-works h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  color: #4a4a4a;
+  font-weight: 700;
+  margin-top: 0;
+}
+body .how-it-works p {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 100px;
+}
+body .how-it-works .further-explanation {
+  display: flex;
+  align-items: baseline;
+}
+body .how-it-works .further-explanation div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .how-it-works .further-explanation div h4 {
+  margin: 50px 0 20px 0;
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+body .how-it-works .further-explanation div p {
+  margin: 0;
 }
 @media (max-width: 1199px) {
   body .col-1 {
