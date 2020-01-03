@@ -1,0 +1,48 @@
+@mixin gridFramework($numberColumns) {
+	float: left;
+	margin: 0 $gridMargin;
+	width: calc(($numberColumns * #{$columnWidth}) + ($gridGutter * ($numberColumns - 1)));
+}
+
+@mixin newRow {
+	clear: left;
+}
+
+$odinGold: #cc9543;
+
+body {
+	$gridMargin: 40px;
+	$gridGutter: 20px;
+	width: 100%;
+	header {
+		nav {
+			$columnWidth: 6.6666%;
+			@include gridFramework(12);
+			div {
+				$columnWidth: 6.6666%;
+				@include gridFramework(10, 0, 20px);
+				a {
+					@include gridFramework(6, 0, 20px);
+					text-decoration: none;
+					span {
+						font-family: 'Skranji', cursive;
+						color: $odinGold;
+						letter-spacing: 0.4px;
+    					font-size: 2em;
+					}
+				}
+			}
+			ul {
+				@include gridFramework(6, 0, 20px);
+				list-style: none;
+				li {
+					@include gridFramework(2, 0, 20px);
+				}
+			}
+		}
+	}
+	@media (max-width: 1199px) {
+	}
+	@media (max-width: 767px) {
+	}
+}
