@@ -95,6 +95,19 @@
 	cursor: pointer;
 	border: none;
 }
+.nav-li-font{
+		letter-spacing: 0.2px;
+		font-size: 1em;
+		font-weight: bold;
+}
+
+.brand-font{
+		font-family: 'Skranji', cursive;
+		letter-spacing: 0.4px;
+		font-size: 1.3em;
+		text-align: left;
+}
+
 
 body {
 	@include responsive(20px);
@@ -113,12 +126,8 @@ body {
 						height: inherit;
 					}
 					span {
-						font-family: 'Skranji', cursive;
-						letter-spacing: 0.4px;
-    					font-size: 1.3em;
     					height: inherit;
    						line-height: 70px;
-   						text-align: left;
    						padding-left: 10px;
 					}
 				}
@@ -295,6 +304,36 @@ body {
 				}
 			}
 		}
+	}
+	footer{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 60px 0;
+		.brand-font {
+			height: inherit;
+			line-height: 94px;
+			padding-left: 10px;
+		}
+		.social{
+			height: 94px;
+			ul{
+				margin: 0;
+			}
+			li{
+				line-height: 94px;
+				font-size: 24px;
+			}
+		}
+		li{
+			list-style-type: none;
+		}
+		.footer-links{
+			li{
+				padding-bottom: 10px;
+			}
+		}
+
 	}
 
 	@media (max-width: 1199px) {

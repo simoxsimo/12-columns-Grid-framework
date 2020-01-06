@@ -56,6 +56,19 @@
   border: none;
 }
 
+.nav-li-font {
+  letter-spacing: 0.2px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.brand-font {
+  font-family: "Skranji", cursive;
+  letter-spacing: 0.4px;
+  font-size: 1.3em;
+  text-align: left;
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -147,12 +160,8 @@ body header nav div a img {
   height: inherit;
 }
 body header nav div a span {
-  font-family: "Skranji", cursive;
-  letter-spacing: 0.4px;
-  font-size: 1.3em;
   height: inherit;
   line-height: 70px;
-  text-align: left;
   padding-left: 10px;
 }
 body header nav ul {
@@ -307,6 +316,33 @@ body .stories div .button-container {
 body .stories div .button-container button {
   background-color: #6abfc3;
   margin-bottom: 60px;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 60px 0;
+}
+body footer .brand-font {
+  height: inherit;
+  line-height: 94px;
+  padding-left: 10px;
+}
+body footer .social {
+  height: 94px;
+}
+body footer .social ul {
+  margin: 0;
+}
+body footer .social li {
+  line-height: 94px;
+  font-size: 24px;
+}
+body footer li {
+  list-style-type: none;
+}
+body footer .footer-links li {
+  padding-bottom: 10px;
 }
 @media (max-width: 1199px) {
   body .col-1 {
