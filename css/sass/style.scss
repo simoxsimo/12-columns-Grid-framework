@@ -200,6 +200,7 @@ body {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				padding-bottom: 40px;
 
 				h4 {
 					margin: 50px 0 20px 0;
@@ -382,6 +383,84 @@ body {
 		}
 	}
 	@media (max-width: 767px) {
-		@include responsive(5px);
+		@mixin responsive-768px($gutter) {
+			.col-s-1{
+			@include gridFramework(1,$gutter);
+			}
+			.col-s-2{
+				@include gridFramework(2,$gutter);
+			}
+			.col-s-3{
+				@include gridFramework(3,$gutter);
+			}
+			.col-s-4{
+				@include gridFramework(4,$gutter);
+			}
+			.col-s-5{
+				@include gridFramework(5,$gutter);
+			}
+			.col-s-6{
+				@include gridFramework(6,$gutter);
+			}
+			.col-s-7{
+				@include gridFramework(7,$gutter);
+			}
+			.col-s-8{
+				@include gridFramework(8,$gutter);
+			}
+			.col-s-9{
+				@include gridFramework(9,$gutter);
+			}
+			.col-s-10{
+				@include gridFramework(10,$gutter);
+			}
+			.col-s-11{
+				@include gridFramework(11,$gutter);
+			}
+			.col-s-12{
+				@include gridFramework(12,$gutter);
+			}
+		}
+		@include responsive-768px(5px);
+		.no-padding-left-768px {
+			padding-left: 0 !important;
+		}
+		.no-padding-right-768px{
+			padding-right: 0 !important;
+		}
+		.flex-s-column{
+			flex-direction: column;
+		}
+
+		header{
+			position: fixed;
+				background-color: #fff;
+				top: 0;
+				left: 0;
+			nav{
+				margin-left: 15px;
+				ul{
+					display: none;
+					li{
+						display: none;
+					}
+				}
+			}
+			.hamburguer{
+				height: 60px;
+				background-color: transparent;
+				outline: none;
+				border: none;
+				svg{
+					height: 30px;
+				}
+			}
+
+		}
+		footer{
+			.brand{
+				display: none;
+			}
+		}
 	}
 }

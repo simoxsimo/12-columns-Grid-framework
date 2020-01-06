@@ -224,6 +224,7 @@ body .how-it-works .further-explanation div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 body .how-it-works .further-explanation div h4 {
   margin: 50px 0 20px 0;
@@ -423,77 +424,113 @@ body footer .footer-links li {
   }
 }
 @media (max-width: 767px) {
-  body .col-1 {
+  body .col-s-1 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 8.3333333333%;
   }
-  body .col-2 {
+  body .col-s-2 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 16.6666666667%;
   }
-  body .col-3 {
+  body .col-s-3 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 25%;
   }
-  body .col-4 {
+  body .col-s-4 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 33.3333333333%;
   }
-  body .col-5 {
+  body .col-s-5 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 41.6666666667%;
   }
-  body .col-6 {
+  body .col-s-6 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 50%;
   }
-  body .col-7 {
+  body .col-s-7 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 58.3333333333%;
   }
-  body .col-8 {
+  body .col-s-8 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 66.6666666667%;
   }
-  body .col-9 {
+  body .col-s-9 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 75%;
   }
-  body .col-10 {
+  body .col-s-10 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 83.3333333333%;
   }
-  body .col-11 {
+  body .col-s-11 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 91.6666666667%;
   }
-  body .col-12 {
+  body .col-s-12 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 100%;
+  }
+  body .no-padding-left-768px {
+    padding-left: 0 !important;
+  }
+  body .no-padding-right-768px {
+    padding-right: 0 !important;
+  }
+  body .flex-s-column {
+    flex-direction: column;
+  }
+  body header {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+  }
+  body header nav {
+    margin-left: 15px;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body header nav ul li {
+    display: none;
+  }
+  body header .hamburguer {
+    height: 60px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+  body header .hamburguer svg {
+    height: 30px;
+  }
+  body footer .brand {
+    display: none;
   }
 }
 
