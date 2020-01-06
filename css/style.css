@@ -165,10 +165,12 @@ body header nav div a span {
   padding-left: 10px;
 }
 body header nav ul {
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   height: inherit;
   margin: 0;
-  padding-left: 11%;
+  padding-left: 0;
 }
 body header nav ul li {
   height: inherit;
@@ -286,7 +288,6 @@ body .stories h3 {
   margin: 60px 0 100px;
 }
 body .stories div div article {
-  padding-left: 60px;
   margin-bottom: 60px;
 }
 body .stories div div article img {
@@ -345,77 +346,80 @@ body footer .footer-links li {
   padding-bottom: 10px;
 }
 @media (max-width: 1199px) {
-  body .col-1 {
+  body .col-m-1 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 8.3333333333%;
   }
-  body .col-2 {
+  body .col-m-2 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 16.6666666667%;
   }
-  body .col-3 {
+  body .col-m-3 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 25%;
   }
-  body .col-4 {
+  body .col-m-4 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 33.3333333333%;
   }
-  body .col-5 {
+  body .col-m-5 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 41.6666666667%;
   }
-  body .col-6 {
+  body .col-m-6 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 50%;
   }
-  body .col-7 {
+  body .col-m-7 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 58.3333333333%;
   }
-  body .col-8 {
+  body .col-m-8 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 66.6666666667%;
   }
-  body .col-9 {
+  body .col-m-9 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 75%;
   }
-  body .col-10 {
+  body .col-m-10 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 83.3333333333%;
   }
-  body .col-11 {
+  body .col-m-11 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 91.6666666667%;
   }
-  body .col-12 {
+  body .col-m-12 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 100%;
+  }
+  body .no-padding-left-1200px {
+    padding-left: 0 !important;
   }
 }
 @media (max-width: 767px) {
