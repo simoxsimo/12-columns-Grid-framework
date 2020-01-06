@@ -19,7 +19,7 @@
 
 ## 🏠 [Homepage](https://github.com/aecordova/proj-8-framework)
 
-## ⭐️ [Live demo](https://rawcdn.githack.com/aecordova/proj-8-framework/3438b3de205d283b7d15765b4b1dd82d1fb5d3c8/index.html)
+## ⭐️ [Live demo](https://rawcdn.githack.com/aecordova/proj-8-framework/8ec50f78d020b3c5bb328979081af356200e1721/index.html)
 
 ## Screenshot
 ![screencapture-file-C-Users-BnadaM-Desktop-proj-8-framework-index-html-2020-01-06-22_07_23](https://user-images.githubusercontent.com/57480558/71852612-06e21780-30d1-11ea-81dc-65a28e7041da.png)

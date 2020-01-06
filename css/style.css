@@ -605,10 +605,6 @@ body footer .footer-links li {
     display: none;
   }
 
-  body footer li {
-    list-style-type: none;
-  }
-
   body header nav ul li {
     display: none;
   }
