@@ -395,10 +395,12 @@ body footer .social ul {
 body footer .social li {
   line-height: 94px;
   font-size: 24px;
+  list-style-type: none;
 }
 
 body footer .footer-links li {
   padding-bottom: 10px;
+  list-style-type: none;
 }
 
 @media (max-width: 1199px) {
