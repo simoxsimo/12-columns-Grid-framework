@@ -211,6 +211,7 @@ body .main-content .btn-container button {
   display: inline-block;
   background-color: #6abfc3;
   width: 280px;
+  padding-left: 20px;
 }
 body .how-it-works {
   padding-top: 100px;
@@ -555,6 +556,26 @@ body footer .footer-links li {
   body .courses div .course img {
     width: 80px;
     height: 80px;
+  }
+}
+@media (max-width: 480px) {
+  body .stories div article img {
+    display: none;
+  }
+  body .stories div article div h4 {
+    padding-bottom: 20px !important;
+  }
+  body .stories .delete-480px {
+    display: none;
+  }
+  body footer .footer-480px {
+    width: 100vw;
+  }
+  body footer .footer-480px .social {
+    width: 100vw;
+  }
+  body footer .footer-480px .footer-links {
+    display: none;
   }
 }
 
