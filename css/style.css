@@ -72,102 +72,121 @@
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 body .col-1 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 8.3333333333%;
 }
+
 body .col-2 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 16.6666666667%;
 }
+
 body .col-3 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 25%;
 }
+
 body .col-4 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 33.3333333333%;
 }
+
 body .col-5 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 41.6666666667%;
 }
+
 body .col-6 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 50%;
 }
+
 body .col-7 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 58.3333333333%;
 }
+
 body .col-8 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 66.6666666667%;
 }
+
 body .col-9 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 75%;
 }
+
 body .col-10 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 83.3333333333%;
 }
+
 body .col-11 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 91.6666666667%;
 }
+
 body .col-12 {
   float: left;
   box-sizing: border-box;
   padding-right: 20px;
   width: 100%;
 }
+
 body header {
   display: flex;
   justify-content: center;
 }
+
 body header nav {
   height: 70px;
 }
+
 body header nav div {
   height: inherit;
 }
+
 body header nav div a {
   text-decoration: none;
   height: inherit;
 }
+
 body header nav div a img {
   width: 53px;
   height: inherit;
 }
+
 body header nav div a span {
   height: inherit;
   line-height: 70px;
   padding-left: 10px;
   white-space: nowrap;
 }
+
 body header nav ul {
   display: flex;
   justify-content: flex-end;
@@ -176,6 +195,7 @@ body header nav ul {
   margin: 0;
   padding-left: 0;
 }
+
 body header nav ul li {
   height: inherit;
   letter-spacing: 0.2px;
@@ -185,76 +205,62 @@ body header nav ul li {
   float: left;
   padding-right: 18px;
 }
+
 body header nav ul li a {
   text-decoration: none;
   height: inherit;
   white-space: nowrap;
 }
+
 body header nav ul li a:hover {
   color: #343a40;
 }
+
 body header nav .hamburguer {
   display: none;
 }
+
 body .main-content .main-title {
   padding-top: 90px;
 }
+
 body .main-content .main-text {
   text-align: center;
 }
+
 body .main-content .btn-container {
   padding: 50px 0 60px 0;
   display: flex;
   justify-content: space-between;
 }
+
+body .courses button {
+  background-color: #cc9543;
+  margin-bottom: 20px;
+}
+
 body .main-content .btn-container button {
   display: inline-block;
   background-color: #6abfc3;
   width: 280px;
   padding-left: 20px;
 }
+
 body .how-it-works {
   padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 body .how-it-works h3 {
   margin-top: 0;
 }
+
 body .how-it-works p {
   margin-bottom: 100px;
 }
-body .how-it-works .further-explanation {
-  display: flex;
-  align-items: baseline;
-}
-body .how-it-works .further-explanation div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 40px;
-}
-body .how-it-works .further-explanation div h4 {
-  margin: 50px 0 20px 0;
-  font-size: 1.125rem;
-  letter-spacing: 0.2px;
-  color: #4a4a4a;
-}
-body .how-it-works .further-explanation div p {
-  margin: 0;
-}
-body .courses {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f3f3f3;
-  margin-top: 100px;
-}
-body .courses h3 {
-  padding-top: 15px;
-}
+
 body .courses div {
   margin-top: 15px;
   display: flex;
@@ -263,6 +269,54 @@ body .courses div {
   align-items: center;
   padding: 0;
 }
+
+body .how-it-works .further-explanation {
+  display: flex;
+  align-items: baseline;
+}
+
+body .how-it-works .further-explanation div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+body .stories div div article div h4 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+body .how-it-works .further-explanation div h4 {
+  margin: 50px 0 20px 0;
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  color: #4a4a4a;
+}
+
+body .stories div div article div p {
+  margin: 0;
+  line-height: 1.88;
+  font-size: 1rem;
+}
+
+body .how-it-works .further-explanation div p {
+  margin: 0;
+}
+
+body .courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin-top: 100px;
+}
+
+body .courses h3 {
+  padding-top: 15px;
+}
+
 body .courses .course {
   background-color: #fff;
   margin: 15px;
@@ -272,89 +326,81 @@ body .courses .course {
   align-items: center;
   padding: 0;
 }
+
 body .courses .course img {
   width: 160px;
   height: 160px;
   padding: 0;
   margin: 20px 0;
 }
+
 body .courses .course span {
   text-transform: uppercase;
   font-weight: 700;
   padding: 0;
   margin-bottom: 20px;
 }
-body .courses button {
-  background-color: #cc9543;
-  margin-bottom: 20px;
-}
+
 body .stories {
   background-image: linear-gradient(to bottom, #fff, #eee);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 body .stories h3 {
   margin: 60px 0 100px;
 }
+
 body .stories div div article {
   margin-bottom: 60px;
 }
-body .stories div div article img {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  padding: 0;
-  margin: 15px 15px 0 0;
-}
-body .stories div div article div h4 {
-  margin: 0;
-  padding-bottom: 5px;
-}
-body .stories div div article div p {
-  margin: 0;
-  line-height: 1.88;
-  font-size: 1rem;
-}
+
 body .stories div .read-more {
   display: block;
   text-decoration: underline;
 }
+
 body .stories div .button-container {
   display: flex;
   justify-content: center;
 }
+
 body .stories div .button-container button {
   background-color: #6abfc3;
   margin-bottom: 60px;
 }
+
 body footer {
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 60px 0;
 }
+
 body footer .brand-font {
   height: inherit;
   line-height: 94px;
   padding-left: 10px;
 }
+
 body footer .social {
   height: 94px;
 }
+
 body footer .social ul {
   margin: 0;
 }
+
 body footer .social li {
   line-height: 94px;
   font-size: 24px;
 }
-body footer li {
-  list-style-type: none;
-}
+
 body footer .footer-links li {
   padding-bottom: 10px;
 }
+
 @media (max-width: 1199px) {
   body .col-m-1 {
     float: left;
@@ -362,76 +408,89 @@ body footer .footer-links li {
     padding-right: 10px;
     width: 8.3333333333%;
   }
+
   body .col-m-2 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 16.6666666667%;
   }
+
   body .col-m-3 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 25%;
   }
+
   body .col-m-4 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 33.3333333333%;
   }
+
   body .col-m-5 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 41.6666666667%;
   }
+
   body .col-m-6 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 50%;
   }
+
   body .col-m-7 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 58.3333333333%;
   }
+
   body .col-m-8 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 66.6666666667%;
   }
+
   body .col-m-9 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 75%;
   }
+
   body .col-m-10 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 83.3333333333%;
   }
+
   body .col-m-11 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 91.6666666667%;
   }
+
   body .col-m-12 {
     float: left;
     box-sizing: border-box;
     padding-right: 10px;
     width: 100%;
   }
+
   body .no-padding-left-1200px {
     padding-left: 0 !important;
   }
 }
+
 @media (max-width: 767px) {
   body .col-s-1 {
     float: left;
@@ -439,96 +498,119 @@ body footer .footer-links li {
     padding-right: 5px;
     width: 8.3333333333%;
   }
+
   body .col-s-2 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 16.6666666667%;
   }
+
   body .col-s-3 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 25%;
   }
+
   body .col-s-4 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 33.3333333333%;
   }
+
   body .col-s-5 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 41.6666666667%;
   }
+
   body .col-s-6 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 50%;
   }
+
   body .col-s-7 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 58.3333333333%;
   }
+
   body .col-s-8 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 66.6666666667%;
   }
+
   body .col-s-9 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 75%;
   }
+
   body .col-s-10 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 83.3333333333%;
   }
+
   body .col-s-11 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 91.6666666667%;
   }
+
   body .col-s-12 {
     float: left;
     box-sizing: border-box;
     padding-right: 5px;
     width: 100%;
   }
+
   body .no-padding-left-768px {
     padding-left: 0 !important;
   }
+
   body .no-padding-right-768px {
     padding-right: 0 !important;
   }
+
   body .flex-s-column {
     flex-direction: column;
   }
+
   body header {
     position: fixed;
     background-color: #fff;
     top: 0;
     left: 0;
   }
+
   body header nav {
     margin-left: 15px;
   }
+
   body header nav ul {
     display: none;
   }
+
+  body footer li {
+    list-style-type: none;
+  }
+
   body header nav ul li {
     display: none;
   }
+
   body header .hamburguer {
     display: inline-block !important;
     height: 60px;
@@ -536,47 +618,64 @@ body footer .footer-links li {
     outline: none;
     border: none;
   }
+
   body header .hamburguer svg {
     height: 30px;
   }
+
   body footer .brand {
     display: none;
   }
 }
+
 @media (max-width: 575px) {
   body .courses div {
     flex-direction: column;
   }
+
   body .courses div .course {
     display: flex;
     flex-direction: row;
     height: 150px;
     width: 270px;
   }
+
+  body .stories div div article img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 15px 15px 0 0;
+  }
+
   body .courses div .course img {
     width: 80px;
     height: 80px;
   }
 }
+
 @media (max-width: 480px) {
   body .stories div article img {
     display: none;
   }
+
   body .stories div article div h4 {
     padding-bottom: 20px !important;
   }
+
   body .stories .delete-480px {
     display: none;
   }
+
   body footer .footer-480px {
     width: 100vw;
   }
+
   body footer .footer-480px .social {
     width: 100vw;
   }
+
   body footer .footer-480px .footer-links {
     display: none;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
