@@ -14,6 +14,48 @@
   text-align: center;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.font-style1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
+
+.font-style2 {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+}
+
+.font-style3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+  color: #4a4a4a;
+  font-weight: 700;
+}
+
+.button-style {
+  text-transform: capitalize;
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 1rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -137,10 +179,6 @@ body header nav ul li a:hover {
 }
 body .main-content .main-title {
   padding-top: 90px;
-  text-align: center;
-  font-size: 2.25rem;
-  font-weight: 300;
-  letter-spacing: 0.4px;
 }
 body .main-content .main-text {
   text-align: center;
@@ -151,18 +189,7 @@ body .main-content .btn-container {
   justify-content: space-between;
 }
 body .main-content .btn-container button {
-  border-radius: 0.2em;
-  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
-  color: #fff;
   display: inline-block;
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: 0.2px;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
   background-color: #6abfc3;
   width: 280px;
 }
@@ -173,15 +200,9 @@ body .how-it-works {
   align-items: center;
 }
 body .how-it-works h3 {
-  font-size: 1.5rem;
-  letter-spacing: 0.3px;
-  color: #4a4a4a;
-  font-weight: 700;
   margin-top: 0;
 }
 body .how-it-works p {
-  font-size: 1.125rem;
-  letter-spacing: 0.2px;
   margin-bottom: 100px;
 }
 body .how-it-works .further-explanation {
@@ -208,12 +229,9 @@ body .courses {
   justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
+  margin-top: 100px;
 }
 body .courses h3 {
-  font-size: 1.5rem;
-  letter-spacing: 0.3px;
-  color: #4a4a4a;
-  font-weight: 700;
   padding-top: 15px;
 }
 body .courses div {
@@ -246,21 +264,49 @@ body .courses .course span {
   margin-bottom: 20px;
 }
 body .courses button {
-  text-transform: capitalize;
   background-color: #cc9543;
-  border-radius: 0.2em;
-  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
-  color: #fff;
-  display: inline-block;
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: 0.2px;
-  padding: 1rem 3.5rem;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
   margin-bottom: 20px;
+}
+body .stories {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .stories h3 {
+  margin: 60px 0 100px;
+}
+body .stories div div article {
+  padding-left: 60px;
+  margin-bottom: 60px;
+}
+body .stories div div article img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 15px 15px 0 0;
+}
+body .stories div div article div h4 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+body .stories div div article div p {
+  margin: 0;
+  line-height: 1.88;
+  font-size: 1rem;
+}
+body .stories div .read-more {
+  display: block;
+  text-decoration: underline;
+}
+body .stories div .button-container {
+  display: flex;
+  justify-content: center;
+}
+body .stories div .button-container button {
+  background-color: #6abfc3;
+  margin-bottom: 60px;
 }
 @media (max-width: 1199px) {
   body .col-1 {
